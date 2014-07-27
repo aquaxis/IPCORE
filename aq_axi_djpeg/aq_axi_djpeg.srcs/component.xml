@@ -819,7 +819,7 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>sourece/aq_djpeg_ziguzagu.v</spirit:name>
+        <spirit:name>sources/aq_djpeg_ziguzagu.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
@@ -894,7 +894,7 @@
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>sources_1/imports/aq_axi4_fifo/aq_axi_lite_slave.v</spirit:name>
+        <spirit:name>sources/aq_axi_lite_slave.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
