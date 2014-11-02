@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2014.3 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="2" Path="/home/hidemi/temp/IPCORE/aq_zybo_vga/aq_zybo_vga.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="ee1d7c66ded241e6912bdae5bf806605"/>
+    <Option Name="Part" Val="xc7z020clg484-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="BoardPart" Val="em.avnet.com:zed:part0:1.0"/>
+    <Option Name="ActiveSimSet" Val="sim"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="IPRepoPath" Val="$PSRCDIR/sources"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources/aq_zybo_vga.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/component.xml">
+        <FileInfo SFType="IPXACT"/>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="aq_zybo_vga"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs" Type="Constrs" RelSrcDir="$PSRCDIR/constrs">
+      <Filter Type="Constrs"/>
+      <Config>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim">
+      <Filter Type="Srcs"/>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="aq_zybo_vga"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TopAutoSet" Val="TRUE"/>
+        <Option Name="SrcSet" Val="sources"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="QuestaSim/ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="IES">
+      <Option Name="Description" Val="Incisive Enterprise Simulator (IES)"/>
+    </Simulator>
+    <Simulator Name="VCS">
+      <Option Name="Description" Val="Verilog Compiler Simulator (VCS)"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="9">
+    <Run Id="synth" Type="Ft3:Synth" SrcSet="sources" Part="xc7z020clg484-1" ConstrsSet="constrs" Description="Vivado Synthesis Defaults" State="current" Dir="$PRUNDIR/synth">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2014"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+    </Run>
+    <Run Id="impl" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="constrs" Description="Vivado Implementation Defaults" State="current" SynthRun="synth">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2014"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+    </Run>
+  </Runs>
+</Project>
