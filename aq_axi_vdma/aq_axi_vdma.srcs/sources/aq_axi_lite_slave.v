@@ -1,3 +1,21 @@
+/*
+ * Copyright (C)2014-2015 AQUAXIS TECHNOLOGY.
+ *  Don't remove this header. 
+ * When you use this source, there is a need to inherit this header.
+ *
+ * License
+ *  For no commercial -
+ *   License:     The Open Software License 3.0
+ *   License URI: http://www.opensource.org/licenses/OSL-3.0
+ *
+ *  For commmercial -
+ *   License:     AQUAXIS License 1.0
+ *   License URI: http://www.aquaxis.com/licenses/OSL-3.0
+ *
+ * For further information please contact.
+ *	URI:    http://www.aquaxis.com/
+ *	E-Mail: info(at)aquaxis.com
+ */
 module aq_axi_lite_slave
   #(
     parameter     C_BASEADRS  = 32'h0000_0000,

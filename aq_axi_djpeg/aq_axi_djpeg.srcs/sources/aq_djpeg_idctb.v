@@ -1,14 +1,21 @@
 /*
-* aq_djpeg_idctb.b
-* Copyright (C)2006-2014 H.Ishihara
-*
-* License: The Open Software License 3.0
-* License URI: http://www.opensource.org/licenses/OSL-3.0
-*
-* For further information please contact.
-*   http://www.aquaxis.com/
-*   info(at)aquaxis.com or hidemi(at)sweetcafe.jp
-*/
+ * Copyright (C)2006-2015 AQUAXIS TECHNOLOGY.
+ *  Don't remove this header. 
+ * When you use this source, there is a need to inherit this header.
+ *
+ * License
+ *  For no commercial -
+ *   License:     The Open Software License 3.0
+ *   License URI: http://www.opensource.org/licenses/OSL-3.0
+ *
+ *  For commmercial -
+ *   License:     AQUAXIS License 1.0
+ *   License URI: http://www.aquaxis.com/licenses/OSL-3.0
+ *
+ * For further information please contact.
+ *	URI:    http://www.aquaxis.com/
+ *	E-Mail: info(at)aquaxis.com
+ */
 `timescale 1ps / 1ps
 
 module aq_djpeg_idctb(
