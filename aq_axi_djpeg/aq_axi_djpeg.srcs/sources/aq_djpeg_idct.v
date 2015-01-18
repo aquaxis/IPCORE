@@ -10,7 +10,7 @@
  *
  *  For commmercial -
  *   License:     AQUAXIS License 1.0
- *   License URI: http://www.aquaxis.com/licenses/OSL-3.0
+ *   License URI: http://www.aquaxis.com/licenses
  *
  * For further information please contact.
  *	URI:    http://www.aquaxis.com/
