@@ -17,10 +17,6 @@
  *	E-Mail: info(at)aquaxis.com
  */
 module aq_axi_vdma
-  #(
-    parameter       C_BASEADRS  = 32'h4002_0000,
-    parameter       C_ADRSWIDTH = 8
-    )
   (
     input           ARESETN,
 
@@ -172,12 +168,7 @@ module aq_axi_vdma
 
   wire [31:0]    debug_slave, debug_ctl, debug_master;
 
-  aq_axi_lite_slave
-    #(
-      .C_BASEADRS(C_BASEADRS),
-      .C_ADRSWIDTH(C_ADRSWIDTH)
-    )
-  u_aq_axi_lite_slave 
+  aq_axi_lite_slave u_aq_axi_lite_slave 
     (
       .ARESETN(ARESETN),
       .ACLK(S_AXI_ACLK),
